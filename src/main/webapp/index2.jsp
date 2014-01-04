@@ -16,30 +16,6 @@
 </script>
 </head>
 <body>
- <h2>Users List</h2>
- <table>
-  <tr>
-   <td>ID</td>
-   <td>Name</td>
-   <td>Email</td>
-  </tr>
-  <%
-      UserService us = new UserService();
-      List<User> users = us.getUsers();
-      for (User user : users)
-      {
-  %>
-  <tr>
-   <td><%=user.getId()%></td>
-   <td><%=user.getName()%></td>
-   <td><%=user.getEmail()%></td>
-  </tr>
-  <%
-      }
-  %>
- </table>
- 
- 
- <a href="index2.jsp">Add user</a>
+ Sample screen for adding user.
 </body>
 </html>
